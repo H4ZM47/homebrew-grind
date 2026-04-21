@@ -2,14 +2,14 @@ class Grind < Formula
   desc "Local-first task management CLI for humans and AI agents"
   homepage "https://github.com/H4ZM47/grind"
   license "MIT"
-  version "1.0.1"
+  version "1.1.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/H4ZM47/grind/releases/download/v1.0.1/grind_1.0.1_darwin_arm64.tar.gz"
-    sha256 "6619ab82a6cc1af8c0984e2aace8969595a42c5dab70638c87a160ea23f77d08"
+    url "https://github.com/H4ZM47/grind/releases/download/v1.1.0/grind_1.1.0_darwin_arm64.tar.gz"
+    sha256 "d8fd68f713d57489cb51b66266309ecb95ee79798baf030bfc3959155e9597a6"
   else
-    url "https://github.com/H4ZM47/grind/releases/download/v1.0.1/grind_1.0.1_darwin_amd64.tar.gz"
-    sha256 "bcd483d0b0ad3bee5a54d5bb66cc19d85717067e8845bf02620f5a484ba06a11"
+    url "https://github.com/H4ZM47/grind/releases/download/v1.1.0/grind_1.1.0_darwin_amd64.tar.gz"
+    sha256 "e4b0414e041da3f4547c3299914e188aacb1276461dc9fcd2f5f6977413e1686"
   end
 
   def install
@@ -17,6 +17,6 @@ class Grind < Formula
   end
 
   test do
-    assert_match "version=", shell_output("#{bin}/grind version")
+    assert_match "version=", shell_output("#{bin}/grind --version")
   end
 end
