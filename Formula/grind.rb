@@ -2,14 +2,14 @@ class Grind < Formula
   desc "Local-first task management CLI for humans and AI agents"
   homepage "https://github.com/H4ZM47/grind"
   license "MIT"
-  version "1.0.0"
+  version "1.0.1"
 
   if Hardware::CPU.arm?
-    url "https://github.com/H4ZM47/grind/releases/download/v1.0.0/grind_1.0.0_darwin_arm64.tar.gz"
-    sha256 "dd56d1ea5e1d30a4d286c5dfcd2ca4df502f531b96e70278f01c86f14ed510b1"
+    url "https://github.com/H4ZM47/grind/releases/download/v1.0.1/grind_1.0.1_darwin_arm64.tar.gz"
+    sha256 "6619ab82a6cc1af8c0984e2aace8969595a42c5dab70638c87a160ea23f77d08"
   else
-    url "https://github.com/H4ZM47/grind/releases/download/v1.0.0/grind_1.0.0_darwin_amd64.tar.gz"
-    sha256 "9ac24118574be23a72bd86805caecbe906f58ce3e255f756ceea4a91d274a852"
+    url "https://github.com/H4ZM47/grind/releases/download/v1.0.1/grind_1.0.1_darwin_amd64.tar.gz"
+    sha256 "bcd483d0b0ad3bee5a54d5bb66cc19d85717067e8845bf02620f5a484ba06a11"
   end
 
   def install
